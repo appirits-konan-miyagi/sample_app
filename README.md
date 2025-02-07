@@ -23,13 +23,3 @@ Railsサーバーが立ち上がり、シンプルブラウザが表示される
 
 ```
 $ rails db:migrate
-```
-
-最後に、テストを実行してうまく動いているかどうか確認してください。
-
-```
-$ rails test
-```
-
-詳しくは、[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
-を参考にしてください。
