@@ -28,6 +28,7 @@ gem 'sass-rails', '~> 6.0'
 gem 'bootstrap-sass', '3.3.7'
 
 
+gem 'rails-controller-testing'
 
 
 
