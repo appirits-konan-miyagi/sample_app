@@ -34,6 +34,9 @@ gem 'rails-controller-testing'
 gem 'bcrypt',         '3.1.12'
 
 
+gem 'jquery-rails'
+
+gem 'turbolinks', '~> 5.2.0'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
