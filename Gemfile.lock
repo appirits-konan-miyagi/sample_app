@@ -87,6 +87,8 @@ GEM
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
+    bootstrap-will_paginate (1.0.0)
+      will_paginate
     brakeman (7.0.0)
       racc
     builder (3.3.0)
@@ -110,6 +112,8 @@ GEM
     error_highlight (0.7.0)
     erubi (1.13.1)
     execjs (2.10.0)
+    faker (2.23.0)
+      i18n (>= 1.8.11, < 2)
     ffi (1.17.1-aarch64-linux-gnu)
     ffi (1.17.1-aarch64-linux-musl)
     ffi (1.17.1-arm-linux-gnu)
@@ -341,6 +345,7 @@ GEM
       base64
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    will_paginate (3.3.1)
     xpath (3.2.0)
       nokogiri (~> 1.8)
     zeitwerk (2.6.18)
@@ -360,10 +365,12 @@ DEPENDENCIES
   bcrypt (= 3.1.20)
   bootsnap
   bootstrap-sass (= 3.3.7)
+  bootstrap-will_paginate (= 1.0.0)
   brakeman
   capybara
   debug
   error_highlight (>= 0.4.0)
+  faker (~> 2.23)
   importmap-rails
   jbuilder
   jquery-rails
@@ -380,6 +387,7 @@ DEPENDENCIES
   turbolinks (~> 5.2.0)
   tzinfo-data
   web-console
+  will_paginate (~> 3.3.0)
 
 BUNDLED WITH
    2.6.3
