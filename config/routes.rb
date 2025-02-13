@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get "foo/bar"
+  get "foo/baz"
+  # resources :microposts
+  # resources :users
   get "sessions/new"
   get "users/new"
   root 'static_pages#home'
@@ -12,12 +16,14 @@ Rails.application.routes.draw do
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
 
-  resources :users
+  
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
 
-  # root "application#hello"
-  # root 'users#index'
+  #  root "application#hello"
+  #  root "application#goodbye"
+  #  root 'users#index'
+  #  root 'microposts#index'
 
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
