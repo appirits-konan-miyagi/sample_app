@@ -42,6 +42,10 @@ gem 'faker', '~> 3.5'
 
 gem 'will_paginate', '~> 4.0.1'
 
+gem 'carrierwave',             '1.2.2'
+gem 'mini_magick',             '4.7.0'
+
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
@@ -81,3 +85,8 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+group :production do
+  gem 'pg',  '0.20.0'
+  gem 'fog', '1.42'
+  end
