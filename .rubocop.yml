@@ -1,8 +1,13 @@
-# Omakase Ruby styling for Rails
-inherit_gem: { rubocop-rails-omakase: rubocop.yml }
+# この設定ファイルは Rubocop のルールをカスタマイズします
+AllCops:
+  TargetRubyVersion: 3.0 # 使用している Ruby のバージョンを記載してください
 
-# Overwrite or add rules to create your own house style
-#
-# # Use `[a, [b, c]]` not `[ a, [ b, c ] ]`
-# Layout/SpaceInsideArrayLiteralBrackets:
-#   Enabled: false
+Layout/IndentationWidth:
+  EnforcedStyle: spaces # スペースを使用してインデントを整える
+  Width: 2 # インデントの幅を2スペースに設定
+
+Layout/IndentationStyle:
+  EnforcedStyle: spaces # インデントをスペースに強制する
+
+Lint/MissingCopEnableDirective:
+  Enabled: false # 無効化を正確に指摘するルール (デフォルトでは無効可)

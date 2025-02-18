@@ -1,6 +1,6 @@
-ENV["RAILS_ENV"] ||= "test"
-require_relative "../config/environment"
-require "rails/test_help"
+ENV['RAILS_ENV'] ||= 'test'
+require_relative '../config/environment'
+require 'rails/test_help'
 
 module ActiveSupport
   class TestCase
@@ -11,14 +11,14 @@ module ActiveSupport
     fixtures :all
 
     # テストユーザーがログイン中の場合にtrueを返す
-  def is_logged_in?
-    !session[:user_id].nil?
-  end
+    def is_logged_in?
+      !session[:user_id].nil?
+    end
 
-  # テストユーザーとしてログインする
-  def log_in_as(user)
-    session[:user_id] = user.id
-  end
+    # テストユーザーとしてログインする
+    def log_in_as(user)
+      session[:user_id] = user.id
+    end
 
     include ApplicationHelper
 
@@ -26,7 +26,6 @@ module ActiveSupport
   end
 
   class ActionDispatch::IntegrationTest
-
     # テストユーザーとしてログインする
     def log_in_as(user, password: 'password', remember_me: '1')
       post login_path, params: { session: { email: user.email,
