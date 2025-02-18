@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   get "foo/bar"
   get "foo/baz"
-  # resources :microposts
   get "sessions/new"
   get "users/new"
   get  '/help',    to: 'static_pages#help'
