@@ -20,6 +20,7 @@ class ApplicationController < ActionController::Base
     session[:forwarding_url] = request.original_url if request.get? # GETリクエストでのみ保存
   end
 
+  
   private
 
     # ユーザーのログインを確認する
@@ -30,5 +31,5 @@ class ApplicationController < ActionController::Base
         redirect_to login_url
       end
     end
-    
 end
+
