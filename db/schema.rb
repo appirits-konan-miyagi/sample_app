@@ -16,6 +16,7 @@ ActiveRecord::Schema[7.2].define(version: 2025_02_14_023008) do
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id", "created_at"], name: "index_microposts_on_user_id_and_created_at"
   end
 
   create_table "users", force: :cascade do |t|
