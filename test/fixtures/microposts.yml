@@ -24,4 +24,3 @@ micropost_<%= n %>:
   created_at: <%= 42.days.ago %>
   user: michael
 <% end %>
-

@@ -87,8 +87,6 @@ GEM
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
-    bootstrap-will_paginate (1.0.0)
-      will_paginate
     brakeman (7.0.0)
       racc
     builder (3.3.0)
@@ -365,7 +363,6 @@ DEPENDENCIES
   bcrypt (= 3.1.20)
   bootsnap
   bootstrap-sass (= 3.3.7)
-  bootstrap-will_paginate (= 1.0.0)
   brakeman
   capybara
   debug
